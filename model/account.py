@@ -31,11 +31,6 @@ class Account:
     #Ham kiem tra dang nhap
     def checkAccount(self, _un, _pw):
         if _un == self.username and _pw == self.password:
-            print("Dung thong tin")
+            return True
         else:
-            print("Sai thong tin")
-
-ac1 = Account()
-ac1.checkAccount("taikhoan", "123")
-ac1.changePassword("1234554321")
-ac1.show()
+            return False
